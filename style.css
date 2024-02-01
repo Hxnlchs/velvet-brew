@@ -1,0 +1,57 @@
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans" . sans-serif;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background-color: #0000;
+}
+.carousel {
+  position: relative;
+  z-index: 500; /* Sesuaikan dengan kebutuhan, pastikan lebih rendah dari z-index navbar */
+  /* Tambahan CSS sesuai kebutuhan */
+}
+
+.navbar a {
+  font-family: "Montserrat", sans;
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url(img/bg2.jpg); */
+  z-index: -1;
+  background-position: center;
+}
+.hero h2 {
+  font-family: "Montserrat", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.hero p {
+  font-family: "Abel", serif;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.hero button {
+  font-family: "Montserrat", sans;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+}
