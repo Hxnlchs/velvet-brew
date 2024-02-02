@@ -8,6 +8,21 @@ body {
   z-index: 1000;
   background-color: #0000;
 }
+.navbar .navbar-brand {
+  color: #d0b8a8;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.offcanvas-title {
+  font-family: "Montserrat", sans;
+  font-weight: semibold;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: #d0b8a8;
+}
+.offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  color: #472d2d;
+}
 .carousel {
   position: relative;
   z-index: 500; /* Sesuaikan dengan kebutuhan, pastikan lebih rendah dari z-index navbar */
@@ -29,7 +44,8 @@ body {
   z-index: -1;
   background-position: center;
 }
-.hero h2 {
+.hero h2,
+.about h2 {
   font-family: "Montserrat", serif;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -54,4 +70,64 @@ body {
   background-size: cover;
   z-index: -1;
   position: absolute;
+}
+
+.about {
+  padding: 3rem;
+  background-color: #f8ede3;
+}
+.about h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #553939;
+}
+.about h3 {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Abel", serif;
+
+  align-items: center;
+}
+.about h3 span {
+  margin-left: 10px; /* Jarak antara garis dan teks (sesuaikan dengan kebutuhan Anda) */
+}
+.about p {
+  font-family: "Montserrat", sans;
+}
+.about img {
+  margin-top: 4rem;
+}
+.about img:hover {
+  animation: imageScale 1s;
+}
+/* Media Queries */
+/* Handphone */
+@media (max-width: 576px) {
+  .about p {
+    font-size: 90%;
+  }
+}
+/* Tablet */
+/* @media (max-width: 768px) {
+  .about p {
+    font-size: 80%;
+  }
+} */
+/* Laptop */
+@media (min-width: 992px) {
+  .about p {
+    font-size: 1.3rem;
+  }
+  .about h2 {
+    font-size: 4rem;
+  }
+}
+/* Animation */
+@keyframes imageScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
