@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -36,9 +38,9 @@
               <li class="nav-item">
                 <a class="nav-link fw-semibold" href="#about">About</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link fw-semibold" href="#coffee">Coffee</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link fw-semibold" href="#menu">Menu</a>
               </li>
@@ -124,5 +126,209 @@
       </div>
     </section>
     <!-- About End -->
+    <!-- Menu Start -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col">
+            <h2>Our Menu</h2>
+            <p class="fw-semibold">The menu offers a variety of coffee blends, satisfying every coffee lover's preference.</p>
+            <p><a href="#coffee" class="menu-direct">COFFEE</a> | <a href="#non-coffee" class="menu-direct">NON-COFFEE</a> | <a href="#tea" class="menu-direct">TEA</a></p>
+          </div>
+        </div>
+        <div class="row" id="coffee">
+          <div class="col">
+            <h3 class="fw-semibold font-monospace mt-5 fs-4">COFFEE</h3>
+          </div>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?coffee" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bold Robusta Brew</h5>
+                <p class="card-text">A robust and intense coffee featuring 100% Robusta, delivering a powerful caffeine kick with deep chocolate undertones.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?latte" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Velvet Robusta Latte</h5>
+                <p class="card-text">Savor the smoothness of our Robusta Latte, balancing the strong Robusta profile with velvety steamed milk for a creamy delight.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?iced-coffee" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Cold Brew Cascade</h5>
+                <p class="card-text">Unleash the boldness of Robusta through our Cold Brew Cascade, a smooth and refreshing coffee with a hint of sweetness.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?hazelnut-coffee" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Hazelnut Elixir</h5>
+                <p class="card-text">An exquisite blend of Robusta beans infused with the nutty essence of hazelnut, offering a delightful and aromatic coffee experience.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?iced-macchiato" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Iced Robusta Macchiato</h5>
+                <p class="card-text">Chill out with our Iced Robusta Macchiato, a refreshing combination of robust espresso over ice, crowned with a dollop of silky foam.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?honey-coffee" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sumatra Mandheling Honey Process</h5>
+                <p class="card-text">Delight in the sweetness of our Sumatra Mandheling Honey Process coffee, resulting in a cup with honey-like sweetness.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?vanilla-coffee" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sumatra Mandheling Vanilla Infusion</h5>
+                <p class="card-text">Experience the fusion of Sumatra Mandheling's earthy tones with the sweet allure of vanilla in our Vanilla Infusion.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="non-coffee">
+          <div class="col">
+            <h3 class="fw-semibold font-monospace mt-5 fs-4">NON-COFFEE</h3>
+          </div>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?mojito-coffee" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Virgin Mojito</h5>
+                <p class="card-text">Sip on our refreshing virgin mojito, a mix of muddled mint, lime, and soda for a burst of citrusy goodness.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?mocktail" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Berry Blast Mocktail</h5>
+                <p class="card-text">A medley of mixed berries muddled with a hint of mint, creating a vibrant and fruity mocktail sensation.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?refreshing-fruit" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Refreshing Fruit</h5>
+                <p class="card-text">A vibrant blend of tropical fruits and juices, served over ice for a refreshing burst of flavor.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?mango-smoothie" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mango Smoothie</h5>
+                <p class="card-text">Indulge in the tropical goodness of our mango smoothie, a creamy and satisfying treat for a hot day.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="tea">
+          <div class="col">
+            <h3 class="fw-semibold font-monospace mt-5 fs-4">TEA</h3>
+          </div>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?oolong-tea" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Iced Peach Oolong</h5>
+                <p class="card-text">Stay cool with our Iced Peach Oolong, a refreshing blend of oolong tea and sweet peach flavors over ice.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?berry-tea" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Hibiscus Berry Bliss</h5>
+                <p class="card-text">Delight in the vibrant colors and flavors of our Hibiscus Berry Bliss, a herbal tea infusion bursting with hibiscus, berries, and a touch of sweetness.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart </a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?blueberry-tea" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Blueberry White Tea</h5>
+                <p class="card-text">Indulge in the subtle elegance of our Blueberry White Tea, a white tea blend with the sweet and juicy essence of blueberries.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?green-tea" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Minty Moroccan Green Tea</h5>
+                <p class="card-text">Transport yourself to the streets of Morocco with our Minty Moroccan Green Tea, a green tea infused with refreshing mint leaves.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?jasmine-tea" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Green Jasmine Fusion</h5>
+                <p class="card-text">Savor the delicate aroma of jasmine flowers in our Green Jasmine Fusion tea, a green tea blend that offers a floral and refreshing taste.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://source.unsplash.com/360x300?honey-tea" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Sumatra Mandheling Honey Process</h5>
+                <p class="card-text">Delight in the sweetness of our Sumatra Mandheling Honey Process coffee, where the beans undergo a unique processing method, resulting in a cup with honey-like sweetness and a syrupy body.</p>
+                <a href="#" class="btn btn-dark"><i class="bi bi-cart-fill"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu End -->
   </body>
 </html>

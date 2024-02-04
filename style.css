@@ -45,7 +45,8 @@ body {
   background-position: center;
 }
 .hero h2,
-.about h2 {
+.about h2,
+.menu h2 {
   font-family: "Montserrat", serif;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -76,7 +77,8 @@ body {
   padding: 3rem;
   background-color: #f8ede3;
 }
-.about h2 {
+.about h2,
+.menu h2 {
   font-weight: bold;
   font-size: 3rem;
   color: #553939;
@@ -91,7 +93,8 @@ body {
 .about h3 span {
   margin-left: 10px; /* Jarak antara garis dan teks (sesuaikan dengan kebutuhan Anda) */
 }
-.about p {
+.about p,
+.menu p {
   font-family: "Montserrat", sans;
 }
 .about img {
@@ -99,6 +102,42 @@ body {
 }
 .about img:hover {
   animation: imageScale 1s;
+}
+/* Menu */
+.menu {
+  padding: 3rem;
+}
+.menu p {
+  color: #d0b8a8;
+}
+.menu h3 {
+  font-family: "Barlow", sans;
+  color: #472d2d;
+}
+.menu .card {
+  background-color: #3c2a21;
+}
+.menu a {
+  color: #f8ede3;
+}
+/* .menu .card {
+  height: 600px;
+} */
+.menu .card-title {
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #d5cea3;
+}
+.menu .card-text {
+  font-family: "Abel", serif;
+  font-size: 1rem;
+}
+.menu .menu-direct {
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  color: #3c2a21;
+  font-weight: 400;
 }
 /* Media Queries */
 /* Handphone */
