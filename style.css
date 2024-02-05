@@ -47,7 +47,9 @@ body {
 .hero h2,
 .about h2,
 .menu h2,
-.campaign h2 {
+.campaign h2,
+.gallery h2,
+.contact h2 {
   font-family: "Montserrat", serif;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -80,7 +82,9 @@ body {
 }
 .about h2,
 .menu h2,
-.campaign h2 {
+.campaign h2,
+.gallery h2,
+.contact h2 {
   font-weight: bold;
   font-size: 3rem;
   color: #553939;
@@ -170,6 +174,69 @@ body {
   font-family: "Montserrat", sans;
   color: #d0b8a8;
 }
+/* Gallery */
+.gallery {
+  padding: 2rem;
+  background-color: #f8ede3;
+}
+.gallery p {
+  font-family: "Abel", serif;
+  letter-spacing: 2px;
+  color: #7d6e83;
+  font-size: 12px;
+}
+.gallery .img-gallery {
+  filter: grayscale(100%);
+}
+.gallery .img-gallery:hover {
+  filter: none;
+  animation: galleryImage 1s;
+}
+/* Contact */
+.contact {
+  padding: 2rem;
+  background-color: #442727;
+}
+.contact h2{
+  color: #FFF8EA;
+}
+.contact p{
+  color: font-family: "Abel", serif;
+  letter-spacing: 2px;
+  color: #D2C6B2;
+  font-size: 12px;
+}
+.contact .bi{
+  font-size: 4em;
+  color: #FFF8EA;
+}
+.contact h3{
+  font-weight: bold;
+  font-family: "Abel", serif;
+  font-size: 22px;
+  color: #F8EDE3;
+}
+.contact a{
+  text-decoration: none;
+  color: #F4F4F4;
+  font-family: "Montserrat", sans;
+}
+/* Footer */
+footer{
+  background-color: #734046;
+  padding: 1.5rem;
+  
+}
+footer small{
+  font-family: "Montserrat", sans;
+  color: #F2EFEA;
+}
+footer a{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans;
+  color: #F2EFEA;
+}
 /* Media Queries */
 /* Handphone */
 @media (max-width: 576px) {
@@ -199,5 +266,13 @@ body {
   }
   100% {
     transform: scale(1.1);
+  }
+}
+@keyframes galleryImage {
+  0% {
+    transform: scale (1);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }
